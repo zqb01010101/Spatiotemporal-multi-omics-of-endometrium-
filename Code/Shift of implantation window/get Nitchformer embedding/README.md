@@ -167,11 +167,3 @@ duplicate the source RNA matrix. Coordinates and metadata are matched by exact
 spot order. No sample, donor, condition, stage, cell type or coordinate is encoded
 into Nicheformer input tokens. Data-dependent batch effects can still be present
 in expression and embeddings; no batch correction is performed here.
-
-## Publication and reuse
-
-See [METHODS.md](docs/METHODS.md), [PROVENANCE.md](docs/PROVENANCE.md) and
-[GITHUB_RELEASE.md](docs/GITHUB_RELEASE.md) before release. The code and synthetic
-tests are small enough for ordinary Git. The source notebook's rendered outputs
-and all large data files are excluded. This organization step prepares local
-files; it does not create a GitHub repository, commit, or push.
