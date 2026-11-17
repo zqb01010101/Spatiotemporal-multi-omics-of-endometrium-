@@ -1,0 +1,20 @@
+{
+  "n_folds": 5,
+  "n_repeats": 5,
+  "random_seed": 42,
+  "neighbor_k": 15,
+  "tier_a_n": 50,
+  "tier_b_n": 30,
+  "random_control_n": 20,
+  "hard_label_min_score": 7.0,
+  "hard_label_min_margin": 2.0,
+  "hard_label_min_confidence": 6.0,
+  "compare_repeats": 1,
+  "mlp_keep_prob": 0.8,
+  "tree_n_estimators": 300,
+  "inner_val_fraction": 0.1,
+  "data_dir": "data",
+  "outputs_dir": "outputs",
+  "figures_dir": "figures",
+  "log_dir": "logs"
+}

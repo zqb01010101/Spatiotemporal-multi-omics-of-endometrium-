@@ -1,0 +1,83 @@
+paths:
+  root_dir: ..
+  app_dir: '.'
+  database: labels/annotations.sqlite
+  data_cache: data_cache
+  logs: logs
+  labels: labels
+data_files:
+  avg: ../26_08_06_avg_list_binary.rds
+  Y_sig: ../26_08_06_Y_sig.rds
+  dist: ../26_08_06_PeakGene_TSSdist_1Mb.rds
+  res: ../26_08_06_res_peak_gene_1Mb.rds
+  tri_stroma: ../26_08_06_tri_Model_result_stroma_1Mb.rds
+  tri_epi: ../26_08_06_tri_Model_result_epi_1Mb.rds
+  sync_stroma: ../26_06_20_Sync_peak_gene_stroma.rds
+  sync_epi: ../26_06_20_Sync_peak_gene_epi.rds
+stages:
+  labels:
+  - PO3
+  - PO5
+  - PO7
+  - PO9
+  - PO11
+  - PO13
+  sec_stroma_cols:
+  - sec_PO3_stroma
+  - sec_PO5_stroma
+  - sec_PO7_stroma
+  - sec_PO9_stroma
+  - sec_PO11_stroma
+  - sec_PO13_stroma
+  sec_epi_cols:
+  - sec_PO3_epithelial
+  - sec_PO5_epithelial
+  - sec_PO7_epithelial
+  - sec_PO9_epithelial
+  - sec_PO11_epithelial
+  - sec_PO13_epithelial
+columns:
+  peak:
+    tri_stroma: peak
+    tri_epi: peak
+    sync_stroma: peak
+    sync_epi: peak
+  gene:
+    tri_stroma: gene
+    tri_epi: gene
+    sync_stroma: gene
+    sync_epi: gene
+  S_pre_shape:
+    tri_stroma: S_pre_shape
+    tri_epi: S_pre_shape
+  S_final:
+    sync_stroma: S_final
+    sync_epi: S_final
+mandatory:
+  tri_S_pre_shape_threshold: 0.2
+  sync_S_final_threshold: 0.7
+sampling:
+  random_seed: 2.0260806e+07
+  n_background_per_context: 1000.0
+  sync_repress:
+    sample_size: 20000.0
+    max_per_context: 500.0
+    dynamic_range_peak: 0.05
+    dynamic_range_gene: 0.05
+    min_drop_peak: 0.05
+    min_drop_gene: 0.05
+    max_window_gap: 1.0
+queue_priorities:
+  mandatory: 1.0
+  sync_repress_heuristic: 2.0
+  random_background: 3.0
+label_rules:
+  hard_label_min_top: 7.0
+  hard_label_min_margin: 2.0
+  hard_label_min_confidence: 6.0
+app:
+  blind_default: yes
+  annotator_default: annotator1
+  app_version: "1.0.0"
+qc:
+  n_consistency_repeats: 20.0
