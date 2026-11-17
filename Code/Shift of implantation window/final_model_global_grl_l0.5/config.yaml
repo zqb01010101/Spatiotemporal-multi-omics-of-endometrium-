@@ -1,0 +1,59 @@
+project_name: final_model_global_grl_l0.5
+
+input_h5ad: D:\Bo_learning\project_and_experiment\Project_human_endometrium\endometrium_neural_network\Nitcheformer\nicheformer_windows_inference_rif\embeddings\full_spatial_nicheformer_embeddings.h5ad
+embedding_key: X_nicheformer
+method_metadata: D:\Bo_learning\project_and_experiment\Project_human_endometrium\endometrium_neural_network\Nitcheformer\nicheformer_windows_inference_rif\embeddings\pro_and_sec_metadata.csv
+
+random_seed: 42
+normal_column: null
+normal_value: null
+group_column: sample_id
+cell_type_filter: null
+
+train_ratio: 0.70
+val_ratio: 0.15
+test_ratio: 0.15
+n_repeats: 3
+holdout_test_ratio: 0.30
+val_from_train_ratio: 0.20
+
+standardize_embedding: true
+temporal_standardize: true
+
+batch_size: 512
+max_epochs: 100
+learning_rate: 0.001
+weight_decay: 0.0001
+dropout: 0.20
+hidden_dim: 256
+latent_dim: 128
+lambda_time: 0.30
+early_stopping_patience: 10
+scheduler_patience: 5
+num_workers: 0
+
+method_adversarial:
+  enabled: true
+  conditional: false
+  lambda_max: 0.5
+  warmup_epochs: 5
+  schedule: dann
+  dual_method_only: true
+
+stage_order_v1:
+  - pro_stage
+  - sec_PO3
+  - sec_PO5
+  - sec_PO7
+  - sec_PO9
+  - sec_PO11
+  - sec_PO13
+
+temporal_numeric:
+  pro_stage: -1
+  sec_PO3: 3
+  sec_PO5: 5
+  sec_PO7: 7
+  sec_PO9: 9
+  sec_PO11: 11
+  sec_PO13: 13

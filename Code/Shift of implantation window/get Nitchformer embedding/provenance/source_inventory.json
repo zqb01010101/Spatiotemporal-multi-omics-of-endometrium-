@@ -1,0 +1,128 @@
+{
+  "packaged_on": "2026-10-21",
+  "copied_files": [
+    {
+      "source": "nicheformer_embedding_with_RIF/scripts/00_inspect_h5ad.py",
+      "packaged": "scripts/00_inspect_h5ad.py",
+      "sha256": "1c06c69a785d463f2d8bc37030e8e4dc450d7b037e0fcbc5f9d4f213698dc5aa",
+      "bytes": 7825
+    },
+    {
+      "source": "nicheformer_embedding_with_RIF/scripts/01_create_dev_subset.py",
+      "packaged": "scripts/01_create_dev_subset.py",
+      "sha256": "810d4590f9d837284aab349104f952b602023173ec13ca0d506ebd6eb526ac37",
+      "bytes": 9581
+    },
+    {
+      "source": "nicheformer_embedding_with_RIF/scripts/02_inspect_model_assets.py",
+      "packaged": "scripts/02_inspect_model_assets.py",
+      "sha256": "8c19ad115fda22ecdca0df4cbb0ec08537e4341408d31a1dfa44363723200e95",
+      "bytes": 8923
+    },
+    {
+      "source": "nicheformer_embedding_with_RIF/scripts/03_build_gene_mapping.py",
+      "packaged": "scripts/03_build_gene_mapping.py",
+      "sha256": "90a967e82da6e57cc708a1af7499a98b0c112348499c629696e500e374781005",
+      "bytes": 14718
+    },
+    {
+      "source": "nicheformer_embedding_with_RIF/scripts/04_compute_dbit_nonzero_mean.py",
+      "packaged": "scripts/04_compute_dbit_nonzero_mean.py",
+      "sha256": "d8f7ca26bbbe16a7349085004925eae5a5c2605fc551923cb78999d5d14ac8bb",
+      "bytes": 6231
+    },
+    {
+      "source": "nicheformer_embedding_with_RIF/scripts/05_tokenize_nicheformer.py",
+      "packaged": "scripts/05_tokenize_nicheformer.py",
+      "sha256": "0af9f94e57b41966cd89aecaa9329745dfa8b98f5260bf5db00fdd9392f80575",
+      "bytes": 13177
+    },
+    {
+      "source": "nicheformer_embedding_with_RIF/scripts/06_validate_tokens.py",
+      "packaged": "scripts/06_validate_tokens.py",
+      "sha256": "eaa84bb3a10e26e94ed26330311e77075bdb5cd2097287d479b8321d0b8800ac",
+      "bytes": 11213
+    },
+    {
+      "source": "nicheformer_embedding_with_RIF/scripts/07_prepare_windows_export.py",
+      "packaged": "scripts/07_prepare_windows_export.py",
+      "sha256": "9fa61bdaea7f8199dc3e4ed5cb68c56d119408ca11ed0b2f98c0744e7d536f6d",
+      "bytes": 5695
+    },
+    {
+      "source": "nicheformer_embedding_with_RIF/scripts/08_final_summary.py",
+      "packaged": "scripts/08_final_summary.py",
+      "sha256": "7fa556707a1e353b66fe57a1db78f9aaf0ff94b3df71243b9fec1ba585cd182e",
+      "bytes": 3606
+    },
+    {
+      "source": "nicheformer_embedding_with_RIF/scripts/common.py",
+      "packaged": "scripts/common.py",
+      "sha256": "215036cbac89b772073d24e6865d7c3b8d22d01378f443dd51cc3cc3b6489315",
+      "bytes": 3821
+    },
+    {
+      "source": "nicheformer_embedding_with_RIF/scripts/gene_utils.py",
+      "packaged": "scripts/gene_utils.py",
+      "sha256": "25172d8be113f968b723bc411910a92fd8e4a8a9d43d2dc0dc80b48caa5fb722",
+      "bytes": 3128
+    },
+    {
+      "source": "nicheformer_embedding_with_RIF/tests/conftest.py",
+      "packaged": "tests/conftest.py",
+      "sha256": "4f082c860815a3706350d2e93559d11b3af5c6b914cab0d72313dd2f22f16bf3",
+      "bytes": 785
+    },
+    {
+      "source": "nicheformer_embedding_with_RIF/tests/test_context_tokens.py",
+      "packaged": "tests/test_context_tokens.py",
+      "sha256": "7711f00addf0938c5d669747a12d2f443477a75db6b351cf03c59288872e01fd",
+      "bytes": 461
+    },
+    {
+      "source": "nicheformer_embedding_with_RIF/tests/test_count_conservation.py",
+      "packaged": "tests/test_count_conservation.py",
+      "sha256": "f2b1c884359262455b6c566437fd271ad12919113cb6f898d8d90f843b1d30b2",
+      "bytes": 473
+    },
+    {
+      "source": "nicheformer_embedding_with_RIF/tests/test_dev_subset_sampling.py",
+      "packaged": "tests/test_dev_subset_sampling.py",
+      "sha256": "775c19e6e60f1bcac4e3ae412842ca6a958e26c35df50f07f694fd1e564b87b8",
+      "bytes": 1497
+    },
+    {
+      "source": "nicheformer_embedding_with_RIF/tests/test_gene_mapping.py",
+      "packaged": "tests/test_gene_mapping.py",
+      "sha256": "6ecec6aa1b13a77cffa939442773960ea67358e00355e5dad5ffcc2d09c89f21",
+      "bytes": 721
+    },
+    {
+      "source": "nicheformer_embedding_with_RIF/tests/test_resume_logic.py",
+      "packaged": "tests/test_resume_logic.py",
+      "sha256": "16d94545e563a7c26caf694d82c6fb6aa57f87eac04b62f4a439673417f0b2d7",
+      "bytes": 728
+    },
+    {
+      "source": "nicheformer_embedding_with_RIF/tests/test_sparse_nonzero_mean.py",
+      "packaged": "tests/test_sparse_nonzero_mean.py",
+      "sha256": "6ab8fefb8619b2bdc10cd4ef81ede3e51295cc6f62be71be0f3c0efbd37b43b6",
+      "bytes": 871
+    },
+    {
+      "source": "nicheformer_embedding_with_RIF/tests/test_tokenizer_equivalence.py",
+      "packaged": "tests/test_tokenizer_equivalence.py",
+      "sha256": "27278bc76b7e4bf0a577b08aefc69d10766ad74160c7c43f50d7de09ba869795",
+      "bytes": 1045
+    }
+  ],
+  "notebook": {
+    "source": "Untitled.ipynb",
+    "sha256": "dac17852f70fd749578fc07bddad9c931a19ef67369f32cf7a3a1eff711374a0",
+    "adapted_cells": [
+      4,
+      7
+    ],
+    "outputs_included": false
+  }
+}

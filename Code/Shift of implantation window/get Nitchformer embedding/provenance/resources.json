@@ -1,0 +1,28 @@
+{
+  "input": {
+    "filename": "pro_sec_with_RIF.h5ad",
+    "sha256": "2960e65257c74312b196e172e6226c9a632cc613c16ce0b62a1f06254ca2544b",
+    "shape": [146414, 38299],
+    "included": false
+  },
+  "model": {
+    "repo_id": "theislab/Nicheformer",
+    "revision": "0ba4ba162f9ad3d6c8b713761954c31be2fa69ed",
+    "files": {
+      "config.json": "f0e124908222eb2e7082be1ee141e5fea8c68c02fcb98c75c3118ee4b048c7b0",
+      "model.safetensors": "65fff02ac9bdd978cbb06b158a60d94ec59a96f30e706aed2c56d213d582e603",
+      "model.h5ad": "a2658657dd9131c905dffe71e5d67c98accfde00f1b4bdf9d26fe3701b516322",
+      "vocab.json": "1ea4c02144cf02b669c5eb0419762f8acba9ac9da601e78ada90a390b3021a3e",
+      "tokenization_nicheformer.py": "22f0a49b877ca1dc319f54cb840c859da7b4a608f7671051d56c3fedebc6815c",
+      "modeling_nicheformer.py": "f80ff3ed8e012d95ca3e113c56c88ead8af237d574cb4411adb7f59d2f50a93b"
+    },
+    "max_length": 1500,
+    "hidden_dimension": 512,
+    "included": false
+  },
+  "annotation": {
+    "url": "https://ftp.ensembl.org/pub/release-112/gtf/homo_sapiens/Homo_sapiens.GRCh38.112.gtf.gz",
+    "sha256": "8c87436bab973c871447743c2f5cbb2b557be0523fe6efe3ff33307a4c836002",
+    "included": false
+  }
+}

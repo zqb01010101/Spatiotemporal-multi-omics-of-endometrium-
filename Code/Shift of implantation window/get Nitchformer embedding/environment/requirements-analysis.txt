@@ -1,0 +1,17 @@
+# Direct dependencies for the supplementary graph/UMAP entry point.
+anndata==0.10.9
+numpy==1.26.4
+scipy==1.13.1
+pandas==2.2.3
+scanpy==1.10.4
+scikit-learn==1.5.2
+numba==0.60.0
+llvmlite==0.43.0
+umap-learn==0.5.7
+pynndescent==0.6.0
+pyarrow==17.0.0
+h5py==3.11.0
+psutil==6.1.1
+zarr==2.18.3
+# Optional notebook-style interactive plots (pass --interactive-html).
+plotly==5.24.1
